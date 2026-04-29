@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio - Mes projets et réalisations">
+  <title>Portfolio | Mon CV Professionnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- EN-TÊTE DE SECTION -->
+  <section class="container" style="margin-top: 3rem;">
+    <div class="section-header">
+      <h2>Mon Portfolio</h2>
+      <p style="font-size: 1.05rem; color: var(--text-light); margin-top: 1rem;">
+        Découvrez mes meilleurs projets et réalisations. Cliquez sur chaque projet pour plus de détails.
+      </p>
+    </div>
+  </section>
+
+  <!-- FILTRE DE CATÉGORIES (Optionnel) -->
+  <section class="container">
+    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem;">
+      <button class="btn btn-primary" style="background: var(--accent);">Tous</button>
+      <button class="btn btn-secondary">Développement Web</button>
+      <button class="btn btn-secondary">Data Science</button>
+      <button class="btn btn-secondary">Design</button>
+      <button class="btn btn-secondary">Applications</button>
+    </div>
+  </section>
+
+  <!-- GRILLE DE PROJETS -->
+  <section class="container">
+    <div class="portfolio-grid">
+      <!-- Projet 1 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300?text=Projet+1" alt="Projet 1">
+        <div class="portfolio-overlay">
+          <div style="text-align: center;">
+            <h3 style="color: white; margin-bottom: 0.5rem;">Projet Web 1</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Développement Web</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 2 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300?text=Projet+2" alt="Projet 2">
+        <div class="portfolio-overlay">
+          <div style="text-align: center;">
+            <h3 style="color: white; margin-bottom: 0.5rem;">Application Mobile</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">React Native / Flutter</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 3 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300?text=Projet+3" alt="Projet 3">
+        <div class="portfolio-overlay">
+          <div style="text-align: center;">
+            <h3 style="color: white; margin-bottom: 0.5rem;">Dashboard Data</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Python / Tableau</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 4 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300?text=Projet+4" alt="Projet 4">
+        <div class="portfolio-overlay">
+          <div style="text-align: center;">
+            <h3 style="color: white; margin-bottom: 0.5rem;">Plateforme E-commerce</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Full Stack</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 5 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300?text=Projet+5" alt="Projet 5">
+        <div class="portfolio-overlay">
+          <div style="text-align: center;">
+            <h3 style="color: white; margin-bottom: 0.5rem;">Machine Learning</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Classification</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Projet 6 -->
+      <div class="portfolio-item">
+        <img src="https://via.placeholder.com/400x300?text=Projet+6" alt="Projet 6">
+        <div class="portfolio-overlay">
+          <div style="text-align: center;">
+            <h3 style="color: white; margin-bottom: 0.5rem;">UI/UX Design</h3>
+            <p style="color: rgba(255,255,255,0.8); font-size: 0.9rem;">Figma / Prototype</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION DÉTAIL PROJETS (OPTIONNEL) -->
+  <section class="container" style="margin-top: 4rem;">
+    <div class="section-header">
+      <h2>Projets détaillés</h2>
+    </div>
+
+    <!-- Projet détail 1 -->
+    <div style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <img 
+            src="https://via.placeholder.com/500x350" 
+            alt="Projet détail" 
+            style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);"
+          >
+        </div>
+        <div>
+          <h3>Titre du Projet 1</h3>
+          <p style="color: var(--accent); font-weight: 600; margin-bottom: 1rem;">
+            Catégorie: Développement Web | Année: 2026
+          </p>
+          <p>
+            Décrivez en détail ce projet. Expliquez :
+            <br>• Le contexte et le problème à résoudre
+            <br>• Votre rôle et les responsabilités
+            <br>• Les technologies utilisées
+            <br>• Les résultats et l'impact
+          </p>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">HTML5</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">CSS3</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">JavaScript</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">React</span>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="#" class="btn btn-primary">Voir le projet</a>
+            <a href="#" class="btn btn-secondary" style="margin-left: 1rem;">Code GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet détail 2 -->
+    <div style="margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+        <div style="order: 2;">
+          <img 
+            src="https://via.placeholder.com/500x350" 
+            alt="Projet détail" 
+            style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);"
+          >
+        </div>
+        <div style="order: 1;">
+          <h3>Titre du Projet 2</h3>
+          <p style="color: var(--accent); font-weight: 600; margin-bottom: 1rem;">
+            Catégorie: Data Science | Année: 2023
+          </p>
+          <p>
+            Remplacez ce texte par la description de votre deuxième projet.
+            Mettez en évidence les données utilisées, la méthodologie,
+            et les insights importants qui ont été découverts.
+          </p>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">Python</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">Pandas</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">Machine Learning</span>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="#" class="btn btn-primary">Voir le projet</a>
+            <a href="#" class="btn btn-secondary" style="margin-left: 1rem;">Rapport</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projet détail 3 -->
+    <div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center;">
+        <div>
+          <img 
+            src="https://via.placeholder.com/500x350" 
+            alt="Projet détail" 
+            style="width: 100%; border-radius: 8px; box-shadow: var(--shadow);"
+          >
+        </div>
+        <div>
+          <h3>Titre du Projet 3</h3>
+          <p style="color: var(--accent); font-weight: 600; margin-bottom: 1rem;">
+            Catégorie: Full Stack | Année: 2023
+          </p>
+          <p>
+            Je vais vous décrire mon troisième projet. Parler de l'architecture,
+            de la base de données, du front-end et du back-end.
+            Met en avant mes contributions spécifiques.
+          </p>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem; flex-wrap: wrap;">
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">Node.js</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">MongoDB</span>
+            <span style="background: var(--accent-light); color: var(--accent); padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.9rem;">Docker</span>
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="#" class="btn btn-primary">Visite en ligne</a>
+            <a href="#" class="btn btn-secondary" style="margin-left: 1rem;">Code GitHub</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATISTIQUES / RÉSULTATS -->
+  <section style="background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%); margin-top: 3rem;">
+    <div class="container">
+      <div class="section-header">
+        <h2>Résultats & Impact</h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; margin-top: 2rem;">
+        <div style="text-align: center;">
+          <h3 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem;">50+</h3>
+          <p>Projets complétés</p>
+        </div>
+        <div style="text-align: center;">
+          <h3 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem;">40%</h3>
+          <p>Amélioration moyenne de performance</p>
+        </div>
+        <div style="text-align: center;">
+          <h3 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem;">100%</h3>
+          <p>Client satisfaction</p>
+        </div>
+        <div style="text-align: center;">
+          <h3 style="color: var(--accent); font-size: 2.5rem; margin-bottom: 0.5rem;">5+</h3>
+          <p>1 ans d'expérience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="container" style="text-align: center; margin-top: 3rem;">
+    <h2>Intéressé par un projet ?</h2>
+    <p style="font-size: 1.1rem; color: var(--text-light); margin-bottom: 2rem;">
+      Contactez-moi pour discuter de vos idées ou besoins
+    </p>
+    <a href="contact.html" class="btn btn-primary">Démarrer un projet</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="#" title="LinkedIn">in</a>
+        <a href="#" title="GitHub">⚙️</a>
+        <a href="#" title="Email">✉️</a>
+        <a href="#" title="Twitter">𝕏</a>
+      </div>
+      
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 - Tous droits réservés | Etudiante en L1</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Activer le lien de navigation actif
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

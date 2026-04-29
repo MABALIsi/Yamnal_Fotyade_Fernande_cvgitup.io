@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact - Entrez en contact avec moi">
+  <title>Contact | Mon CV Professionnel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <header>
+    <nav>
+      <div class="logo">Portfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="apropos.html">À propos</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- EN-TÊTE DE PAGE -->
+  <section class="container" style="margin-top: 3rem;">
+    <div class="section-header">
+      <h2>Me contacter</h2>
+      <p style="font-size: 1.05rem; color: var(--text-light); margin-top: 1rem;">
+        J'aimerais discuter de vos projets ou opportunités. Contactez-moi via le formulaire ci-dessous 
+        ou directement par email.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION PRINCIPALE -->
+  <section class="container">
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: flex-start;">
+      <!-- FORMULAIRE -->
+      <div>
+        <h3 style="margin-bottom: 1.5rem;">Envoyez-moi un message</h3>
+        
+        <form id="contactForm" style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="form-group">
+            <label for="name">Nom complet *</label>
+            <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Votre nom"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="votre.email@exemple.com"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Téléphone</label>
+            <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="+235 XXXXXXXXX"
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Sujet *</label>
+            <input 
+              type="text" 
+              id="subject" 
+              name="subject" 
+              placeholder="Sujet de votre message"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message *</label>
+            <textarea 
+              id="message" 
+              name="message" 
+              placeholder="Votre message..."
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget (optionnel)</label>
+            <select id="budget" name="budget" style="width: 100%; padding: 0.8rem; border: 1px solid var(--border); border-radius: 4px; font-family: inherit; font-size: 1rem;">
+              <option value="">-- Sélectionner une gamme --</option>
+              <option value="low">Moins de 5,000 FCFA</option>
+              <option value="medium">5,000 - 50,000 FCFA</option>
+              <option value="high">50,000 - 500,000 FCFA</option>
+              <option value="enterprise">500,000+ FCFA</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%; cursor: pointer;">
+            Envoyer le message
+          </button>
+
+          <p style="font-size: 0.85rem; color: var(--text-light); text-align: center; margin-top: 1rem;">
+            * Champs obligatoires
+          </p>
+        </form>
+
+        <!-- Message de confirmation (caché par défaut) -->
+        <div id="successMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: #d4edda; border: 1px solid #c3e6cb; border-radius: 4px; color: #155724;">
+          ✓ Merci ! Votre message a été envoyé avec succès. Je vous répondrai bientôt.
+        </div>
+
+        <div id="errorMessage" style="display: none; margin-top: 1rem; padding: 1rem; background: #f8d7da; border: 1px solid #f5c6cb; border-radius: 4px; color: #721c24;">
+          ✗ Erreur ! Veuillez remplir tous les champs obligatoires et réessayer.
+        </div>
+      </div>
+
+      <!-- INFORMATIONS DE CONTACT -->
+      <div>
+        <h3 style="margin-bottom: 1.5rem;">Informations de contact</h3>
+
+        <!-- Email -->
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Email</h4>
+          <p style="margin-bottom: 0;">
+            <a href="mailto:votre.email@exemple.com" style="font-weight: 600;">votre.email@exemple.com</a>
+          </p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Réponse généralement sous 24h</p>
+        </div>
+
+        <!-- Téléphone -->
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Téléphone</h4>
+          <p style="margin-bottom: 0;">
+            <a href="tel:+235XXXXXXXXX" style="font-weight: 600;">+237 XX XX XX XX</a>
+          </p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Lun-Ven, 9h-18h (GMT+1)</p>
+        </div>
+
+        <!-- Localisation -->
+        <div class="card" style="margin-bottom: 1rem;">
+          <h4 style="color: var(--accent); margin-bottom: 0.5rem;">Localisation</h4>
+          <p style="margin-bottom: 0;">
+            <strong>N'Djaména, Tchad</strong>
+          </p>
+          <p style="color: var(--text-light); font-size: 0.9rem;">Disponible pour remote et freelance</p>
+        </div>
+
+        <!-- Réseaux Sociaux -->
+        <div class="card">
+          <h4 style="color: var(--accent); margin-bottom: 1rem;">Réseaux sociaux</h4>
+          <div class="social-links" style="justify-content: flex-start;">
+            <a href="https://www.linkedin.com/in/votre-profil" target="_blank" title="LinkedIn">
+              <span style="font-size: 0.8rem;">in</span>
+            </a>
+            <a href="https://github.com/votre-profil" target="_blank" title="GitHub">
+              ⚙️
+            </a>
+            <a href="https://twitter.com/votre-profil" target="_blank" title="Twitter">
+              𝕏
+            </a>
+            <a href="https://www.facebook.com/votre-profil" target="_blank" title="Facebook">
+              f
+            </a>
+          </div>
+        </div>
+
+        <!-- Télécharger CV -->
+        <div style="margin-top: 2rem; padding: 1.5rem; background: var(--accent-light); border-radius: 8px; text-align: center;">
+          <p style="color: var(--text-light); margin-bottom: 1rem;">Vous préférez un document ?</p>
+          <a href="#" download class="btn btn-primary" style="width: 100%;">
+            ⬇️ Télécharger mon CV (PDF)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP ou Localisation SECTION (OPTIONNEL) -->
+  <section style="background: linear-gradient(135deg, #f5f5f5 0%, #fafafa 100%); margin-top: 3rem;">
+    <div class="container">
+      <h3 style="text-align: center; margin-bottom: 2rem;">Où me trouver</h3>
+      
+      <!-- Placeholder pour map -->
+      <div style="width: 100%; height: 400px; background: var(--border); border-radius: 8px; display: flex; align-items: center; justify-content: center; color: var(--text-light);">
+        <div style="text-align: center;">
+          <p style="font-size: 3rem; margin-bottom: 0.5rem;">📍</p>
+          <p>je vais intégrer une carte Google Maps ici</p>
+          <p style="font-size: 0.9rem;">N'Djaména, Tchad</p>
+        </div>
+      </div>
+
+      <p style="text-align: center; color: var(--text-light); margin-top: 2rem; font-size: 0.9rem;">
+        Vous pouvez intégrer une carte Google Maps en ajoutant un iframe avec votre adresse.
+      </p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="container" style="margin-top: 3rem;">
+    <div class="section-header">
+      <h2>Questions fréquemment posées</h2>
+    </div>
+
+    <div style="max-width: 800px; margin: 0 auto; margin-top: 2rem;">
+      <!-- FAQ Item 1 -->
+      <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+        <h4 style="color: var(--primary); cursor: pointer; user-select: none;">
+          Quel est votre délai de réponse ?
+        </h4>
+        <p style="color: var(--text-light); margin-top: 0.5rem;">
+          Je réponds généralements sous 24 heures. Pour les urgences, vous pouvez m'appeler directement.
+        </p>
+      </div>
+
+      <!-- FAQ Item 2 -->
+      <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+        <h4 style="color: var(--primary); cursor: pointer; user-select: none;">
+          Offrez-vous des services de conseil ?
+        </h4>
+        <p style="color: var(--text-light); margin-top: 0.5rem;">
+          Oui, je propose du conseil en développement web,et architecture logicielle.
+        </p>
+      </div>
+
+      <!-- FAQ Item 3 -->
+      <div style="margin-bottom: 1.5rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border);">
+        <h4 style="color: var(--primary); cursor: pointer; user-select: none;">
+          Travaillez-vous avec des équipes externes ?
+        </h4>
+        <p style="color: var(--text-light); margin-top: 0.5rem;">
+          Absolument. Je collabore régulièrement avec d'autres professionnels pour les projets complexes.
+        </p>
+      </div>
+
+      <!-- FAQ Item 4 -->
+      <div style="margin-bottom: 1.5rem;">
+        <h4 style="color: var(--primary); cursor: pointer; user-select: none;">
+          Quels sont vos tarifs ?
+        </h4>
+        <p style="color: var(--text-light); margin-top: 0.5rem;">
+          Les tarifs dépendent de la nature et de la complexité du projet. Je propose une consultation gratuite 
+          pour discuter de vos besoins et établir un devis.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-content">
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/votre-profil" target="_blank" title="LinkedIn">in</a>
+        <a href="https://github.com/votre-profil" target="_blank" title="GitHub">⚙️</a>
+        <a href="mailto:votre.email@exemple.com" title="Email">✉️</a>
+        <a href="https://twitter.com/votre-profil" target="_blank" title="Twitter">𝕏</a>
+      </div>
+      
+      <div class="footer-links">
+        <a href="index.html">Accueil</a>
+        <a href="apropos.html">À propos</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026- Tous droits réservés | Yamnal Fernande</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Gestion du formulaire de contact
+    const contactForm = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+    const errorMessage = document.getElementById('errorMessage');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      // Récupérer les valeurs du formulaire
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      // Validation simple
+      if (name && email && subject && message) {
+        // Ici, vous pouvez envoyer les données à un serveur
+        // Pour l'instant, on va simplement afficher un message de succès
+        
+        // Construire l'email body
+        const emailBody = `
+Nom: ${name}
+Email: ${email}
+Téléphone: ${document.getElementById('phone').value || 'Non fourni'}
+Budget: ${document.getElementById('budget').value || 'Non spécifié'}
+
+Message:
+${message}
+        `;
+
+        // Afficher le message de succès
+        successMessage.style.display = 'block';
+        errorMessage.style.display = 'none';
+
+        // Réinitialiser le formulaire
+        contactForm.reset();
+
+        // Masquer le message après 5 secondes
+        setTimeout(() => {
+          successMessage.style.display = 'none';
+        }, 5000);
+
+        // OPTIONNEL: Envoyer un email via EmailJS ou Formspree
+        // Décommentez si vous utilisez l'une de ces services
+        /*
+        fetch('https://formspree.io/f/YOUR_FORM_ID', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            phone: document.getElementById('phone').value,
+            subject: subject,
+            message: message
+          })
+        }).catch(error => console.error('Erreur:', error));
+        */
+      } else {
+        successMessage.style.display = 'none';
+        errorMessage.style.display = 'block';
+
+        setTimeout(() => {
+          errorMessage.style.display = 'none';
+        }, 5000);
+      }
+    });
+
+    // Activer le lien de navigation actif
+    document.querySelectorAll('.nav-links a').forEach(link => {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+      link.addEventListener('click', () => {
+        document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+        link.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>
